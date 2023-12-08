@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:likeminds_feed/likeminds_feed.dart';
 import 'package:likeminds_feed_ui_fl/likeminds_feed_ui_fl.dart';
 import 'package:media_kit_video/media_kit_video.dart';
 import 'package:url_launcher/url_launcher.dart';
@@ -26,7 +25,7 @@ class LMPostMedia extends StatefulWidget {
     this.onError,
   });
 
-  final List<Attachment> attachments;
+  final List<AttachmentViewData> attachments;
   final Function(VideoController)? initialiseVideoController;
   final Widget? documentIcon;
   final double? borderRadius;
@@ -50,7 +49,7 @@ class LMPostMedia extends StatefulWidget {
 }
 
 class _LMPostMediaState extends State<LMPostMedia> {
-  List<Attachment>? attachments;
+  List<AttachmentViewData>? attachments;
   late Size screenSize;
 
   void initialiseAttachments() {

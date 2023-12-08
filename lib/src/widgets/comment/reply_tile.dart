@@ -1,12 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:likeminds_feed/likeminds_feed.dart';
+import 'package:likeminds_feed_ui_fl/likeminds_feed_ui_fl.dart';
 import 'package:likeminds_feed_ui_fl/packages/expandable_text/expandable_text.dart';
 import 'package:likeminds_feed_ui_fl/src/utils/theme.dart';
-import 'package:likeminds_feed_ui_fl/src/widgets/common/buttons/text_button.dart';
-import 'package:likeminds_feed_ui_fl/src/widgets/common/icon/icon.dart';
-import 'package:likeminds_feed_ui_fl/src/widgets/common/profile_picture.dart';
-import 'package:likeminds_feed_ui_fl/src/widgets/common/text/text_view.dart';
-import 'package:likeminds_feed_ui_fl/src/widgets/post/post_menu.dart';
 
 class LMReplyTile extends StatefulWidget {
   const LMReplyTile({
@@ -29,8 +24,8 @@ class LMReplyTile extends StatefulWidget {
     this.linkStyle,
   });
 
-  final User user;
-  final CommentReply comment;
+  final UserViewData user;
+  final CommentViewData comment;
 
   final TextStyle? textStyle;
   final TextStyle? linkStyle;
